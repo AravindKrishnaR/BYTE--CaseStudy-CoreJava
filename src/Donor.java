@@ -37,7 +37,7 @@ public class Donor extends Person {
 
 	public void displayDonationDetails() {
 		System.out.println("Donation Details : " + "\nName : " + this.getName() + "\nDate Of Birth : "
-				+ this.getDateOfBirth() + "\nGender : " + this.getGender() + "Mobile Number : " + this.getMobileNumber()
+				+ this.getDateOfBirth() + "\nGender : " + this.getGender() + "\nMobile Number : " + this.getMobileNumber()
 				+ "\nBlood Group : " + this.getBloodGroup() + "\nBlood Bank Name : " + this.getBloodBankName()
 				+ "\nDonor Type : " + this.getDonorType() + "\nDonation Date : " + this.getDonationDate());
 	}
