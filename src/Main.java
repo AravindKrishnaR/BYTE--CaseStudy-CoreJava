@@ -4,34 +4,37 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		
+
 		System.out.println("Enter the name : ");
-		String name = in.next();
-		
+		String name = in.nextLine();
+
 		System.out.println("Enter Date of Birth : ");
-		String dateOfBirth = in.next();
-		
+		String dateOfBirth = in.nextLine();
+
 		System.out.println("Enter Gender : ");
-		String gender = in.next();
-		
+		String gender = in.nextLine();
+
 		System.out.println("Enter Mobile Number : ");
-		String mobileNumber = in.next();
-		
+		String mobileNumber = in.nextLine();
+
 		System.out.println("Enter Blood Group : ");
-		String bloodGroup = in.next();
-		
+		String bloodGroup = in.nextLine();
+
 		System.out.println("Enter Blood Bank Name : ");
-		String bloodBankName = in.next();
-		
+		String bloodBankName = in.nextLine();
+
 		System.out.println("Enter Donor Type : ");
-		String donorType = in.next();
-		
+		String donorType = in.nextLine();
+
 		System.out.println("Enter Donation Date : ");
-		String donationDate = in.next();
-		
+		String donationDate = in.nextLine();
+
 		in.close();
+
+		Donor donor = new Donor(name, dateOfBirth, gender, mobileNumber, bloodGroup, bloodBankName, donorType,
+				donationDate);
 		
-		Donor donor = new Donor(name, dateOfBirth, gender, mobileNumber, bloodGroup, bloodBankName, donorType, donationDate)
+		donor.displayDonationDetails();
 	}
 
 }
