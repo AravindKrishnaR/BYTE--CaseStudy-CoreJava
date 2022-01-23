@@ -3,8 +3,8 @@ public class Donor extends Person {
 	private String donorType;
 	private String donationDate;
 
-	Donor(String bloodBankName, String donorType, String donationDate, String name, String dateOfBirth, String gender,
-			String mobileNumber, String bloodGroup) {
+	Donor(String name, String dateOfBirth, String gender,
+			String mobileNumber, String bloodGroup, String bloodBankName, String donorType, String donationDate) {
 		super(name, dateOfBirth, gender, mobileNumber, bloodGroup);
 		this.bloodBankName = bloodBankName;
 		this.donorType = donorType;
